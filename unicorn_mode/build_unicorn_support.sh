@@ -178,6 +178,13 @@ make && sudo make install || exit 1
 
 echo "[+] Unicorn installed successfully."
 
+echo "[*] Regenerating Unicorn python binding constants..."
+
+cd bindings || exit 1
+python3 const_generator.py python || exit 1
+cd .. || exit 1
+echo "[+] Regenerating Unicorn python binding constants completed successfully"
+
 echo "[*] Building Unicorn python bindings..."
 
 cd bindings/python || exit 1

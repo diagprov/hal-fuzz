@@ -2,4 +2,9 @@
 *.egg-info
 *.o
 *.idea
-./unicorn_mode/unicorn-1.0.1
+unicorn_mode/unicorn-1.0.1/*
+afl-*
+as
+hal_fuzz/hal_fuzz/native/native_hooks.so
+test-instr
+test-instr-argv
